@@ -1,15 +1,22 @@
-x = prompt('Введите число от 0 до 59'); 
-x = Number(x); 
+lang = prompt('Дни недели (выберите язык)');
+switch (lang) {
+	
+	case 'ru':
+		alert('Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
+	break; 
+	case 'en':
+		alert('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday'); 
+	break;
+} 
 
-if(x >= 0 && x <= 14) {
-	alert('1-я четверть часа');
+lang = prompt('Дни недели (выберите язык)'); 
+lang = String(lang); 
+
+if(lang='ru') { 
+	alert('Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье');
 } 
-if(x >= 15 && x <= 30) {
-	alert('2-я четверть часа');
-}
-if(x >= 31 && x <= 45) {
-	alert('3-я четверть часа');
+
+if(lang='en') { 
+	alert('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday');
 } 
-if(x >= 46 && x <= 59) {
-	alert('4-я четверть часа');
-} 
+
