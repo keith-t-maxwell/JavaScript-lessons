@@ -32,6 +32,40 @@ function PrintInt() {
 
 
 function ForFun() {
-	
-	
+	x = prompt('Сколько чисел вам вывести')
+	var i;
+	for (i=0; i < x;i++){
+		document.write(x[i] + '<br>');
+	};
+}
+
+
+function arrRevers(){
+	arr=[1,2,3,4,5,6,7,8,9,10];
+	alert(arr);
+	alert(arr.reverse());
+} 
+
+function arrAdd(){
+	arr = [1,2,3,4,5];
+	alert(arr);
+	arr.push(6,7,8,9,10);
+	alert(arr);
+	arr = [1,2,3,4,5];
+	alert(arr);
+	arr.unshift(6,7,8,9,10);
+	alert(arr);
+}
+
+function arrSlice(){
+	arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+	alert(arr);
+	result = arr.slice(0,5);
+	alert(result);
+}
+
+function arrSort(){
+	arr = ["я","ц","у","к","и","а"];
+	alert(arr);
+	alert(arr.sort());
 }
